@@ -1,5 +1,3 @@
-
-
 function calculate() {
 	var $C1Cr = $("#c1").val()*1,
 		$C1Gr = $("#g1").val()*1,
@@ -30,10 +28,10 @@ function calculate() {
     howManyCourses();
     weighedGpa = ((Math.floor($C1Cr * $C1Gr + $C2Cr * $C2Gr + $C3Cr * $C3Gr + $C4Cr * $C4Gr + $C5Cr * $C5Gr)) / totalCredits).toFixed(2);
     gpa = (gradePoints / gradeArrayNoNulls.length).toFixed(2);
-	$("#gradepointsOutput").append("<p>" + gradePoints + " </p>");
-	$("#totalcreditsOutput").append("<p>" + totalCredits + " </p>");
-  $("#gpa").append("<p>" + gpa + "</p>");
-  $("#weighGpa").append("<p>" + weighedGpa + "</p>");
+	$("#gradepointsOutput").empty().append("<p>" + gradePoints + " </p>");
+	$("#totalcreditsOutput").empty().append("<p>" + totalCredits + " </p>");
+  $("#gpa").empty().append("<p>" + gpa + "</p>");
+  $("#weighGpa").empty().append("<p>" + weighedGpa + "</p>");
 }
 
 $("#calculateButton").on("click", calculate);
