@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>GPA Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+  <link href="normalize.css" rel="stylesheet" type="text/css" media="screen"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <h1>GPA Calculator</h1>
+  </header>
+  <main>
+    <section>
+      <h1>Add your numbers below</h1>
+      <form>
+        <div>Course 1 
+          <input placeholder="Add credits" type="number" class="credit" id="c1" name="Course1credit">
+          <input placeholder="Add grade" type="number" class="grade" id="g1" name="Course1grade">
+        </div>
+        <div>Course 2 
+          <input placeholder="Add credits" type="number" class="credit" id="c2" name="Course2credit">
+          <input placeholder="Add grade" type="number" class="grade" id="g2" name="Course2grade">
+        </div>
+        <div>Course 3 
+          <input placeholder="Add credits" type="number" class="credit" id="c3" name="Course3credit">
+          <input placeholder="Add grade" type="number" class="grade" id="g3" name="Course3grade">
+        </div>
+        <div>Course 4 
+          <input placeholder="Add credits" type="number" class="credit" id="c4" name="Course4credit">
+          <input placeholder="Add grade" type="number" class="grade" id="g4" name="Course4grade">
+        </div>
+        <div>Course 5 
+          <input placeholder="Add credits" type="number" class="credit" id="c5" name="Course5credit">
+          <input placeholder="Add grade" type="number" class="grade" id="g5" name="Course5grade">
+        </div>
+      </form>
+      <button id="calculateButton">Calculate</button>
+      <button type="button" value="Reload Window" onclick="window.location.reload()">Clear</button>
+    </section>
+    <section>
+      <h1>Results</h1>
+      <p>Total grade points: <span id="gradepointsOutput"></span></p>
+      <p>Total credits: <span id="totalcreditsOutput"></span></p>
+      <p>Unweighed Quarter GPA: <span id="gpa"></span></p>
+      <p>Weighed GPA: <span id="weighGpa"></span></p>
+    </section>
+  </main>
+  <footer>
+    <h1>Study hard, no room for slackers!</h1>
+  </footer>
+    <script src='http://code.jquery.com/jquery-1.11.2.min.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
