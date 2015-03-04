@@ -3,7 +3,8 @@
 <head>
   <title>GPA Calculator</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
-  <link href="normalize.css" rel="stylesheet" type="text/css" media="screen"/>
+  <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="animate.css">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +13,10 @@
   <header>
     <h1>GPA Calculator</h1>
   </header>
-  <main>
-    <section>
+  <main class="container">
+    <section class="sections input">
       <h1>Add your numbers below</h1>
-      <form>
+      <form class="animated bounce">
         <div>Course 1 
           <input placeholder="Add credits" type="number" class="credit" id="c1" name="Course1credit">
           <input placeholder="Add grade" type="number" class="grade" id="g1" name="Course1grade">
@@ -37,10 +38,10 @@
           <input placeholder="Add grade" type="number" class="grade" id="g5" name="Course5grade">
         </div>
       </form>
-      <button id="calculateButton">Calculate</button>
+      <button type="button" id="calculateButton">Get GPA</button>
       <button type="button" value="Reload Window" onclick="window.location.reload()">Clear</button>
     </section>
-    <section>
+    <section class="sections results">
       <h1>Results</h1>
       <p>Total grade points: <span id="gradepointsOutput"></span></p>
       <p>Total credits: <span id="totalcreditsOutput"></span></p>
@@ -49,7 +50,7 @@
     </section>
   </main>
   <footer>
-    <h1>Study hard, no room for slackers!</h1>
+    <h1>Study hard. No room for slackers!</h1>
   </footer>
     <script src='http://code.jquery.com/jquery-1.11.2.min.js'></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
