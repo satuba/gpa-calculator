@@ -4,7 +4,6 @@
   <title>GPA Calculator</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
   <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="animate.css">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +14,7 @@
   </header>
   <main class="container">
     <section class="sections input">
-      <h1>Add your numbers below</h1>
+      <h1>Add your credits and grades below</h1>
       <form class="animated bounce">
         <div>Course 1 
           <input placeholder="Add credits" type="number" class="credit" id="c1" name="Course1credit">
@@ -39,13 +38,13 @@
         </div>
       </form>
       <button type="button" id="calculateButton">Get GPA</button>
-      <button type="button" value="Reload Window" onclick="window.location.reload()">Clear</button>
+      <button type="button" id="addLineButton">Add line</button>
     </section>
     <section class="sections results">
       <h1>Results</h1>
       <p>Total grade points: <span id="gradepointsOutput"></span></p>
       <p>Total credits: <span id="totalcreditsOutput"></span></p>
-      <p>Unweighed Quarter GPA: <span id="gpa"></span></p>
+      <p>Unweighed GPA: <span id="gpa"></span></p>
       <p>Weighed GPA: <span id="weighGpa"></span></p>
     </section>
   </main>
