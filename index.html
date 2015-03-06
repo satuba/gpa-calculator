@@ -16,6 +16,7 @@
     <section class="sections input">
       <h1>Add your credits and grades below</h1>
       <form class="animated bounce">
+        <p class="message">Maximum grade you can have is 4.0!</p>
         <div>Course 1 
           <input placeholder="Add credits" type="number" class="credit" id="c1" name="Course1credit">
           <input placeholder="Add grade" type="number" class="grade" id="g1" name="Course1grade">
@@ -38,7 +39,7 @@
         </div>
       </form>
       <button type="button" id="calculateButton">Get GPA</button>
-      <button type="button" id="addLineButton">Add line</button>
+      <button type="button" value="Reload Window" onclick="window.location.reload()">Clear</button>
     </section>
     <section class="sections results">
       <h1>Results</h1>
